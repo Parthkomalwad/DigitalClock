@@ -13,5 +13,10 @@ function displayTime() {
     else{
         session.innerHTML='AM';
     }
+    if(hr>12)
+    {
+        hr = hr-12
+        document.getElementById('hour').innerHTML=hr;
+    }
 }
 setInterval(displayTime, 10);
